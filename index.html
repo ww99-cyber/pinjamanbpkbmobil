@@ -1,1 +1,531 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta SEO -->
+    <title>Pinjaman BPKB Mobil Cepat Cair & Resmi | Agen BFI Finance</title>
+    <meta name="description" content="Layanan pinjaman dana tunai jaminan BPKB mobil proses cepat, bunga ringan, dan resmi berizin OJK bersama Agen Resmi BFI Finance. Melayani Jabodetabek & seluruh Indonesia.">
+    <meta name="keywords" content="pinjaman bpkb mobil, gadai bpkb mobil, pinjaman jaminan bpkb mobil, bfi finance, simulasi angsuran bpkb mobil">
+    
+    <!-- JSON-LD Structured Data for FAQ (Google Rich Snippets SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Apakah BPKB mobil belum balik nama bisa diproses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bisa. BPKB yang belum balik nama (atas nama orang lain) tetap dapat diproses selama melampirkan STNK aktif dan bukti transaksi/kwitansi jual beli yang sah."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa lama proses pencairan BPKB mobil di BFI Finance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Proses pencairan sangat cepat, umumnya membutuhkan waktu 1 hingga 2 hari kerja setelah seluruh dokumen persyaratan dan verifikasi cek fisik kendaraan selesai disetujui."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Berapa usia maksimal mobil yang bisa dijaminkan BPKB-nya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usia kendaraan yang dapat dijaminkan adalah hingga 15 tahun (kendaraan jenis passenger seperti Sedan, SUV, MPV) dan hingga 10-12 tahun untuk kendaraan komersial."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah mobil masih bisa saya gunakan setelah BPKB dijaminkan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tentu saja. Yang dijaminkan ke pihak BFI Finance hanyalah dokumen BPKB asli. Fisik mobil tetap berada di tangan Anda dan bisa digunakan sehari-hari."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah ada biaya tersembunyi dalam proses pengajuan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tidak ada biaya tersembunyi. Semua rincian potongan biaya administrasi, asuransi, dan estimasi angsuran akan dijelaskan secara transparan sebelum Anda menandatangani akad perjanjian."
+          }
+        }
+      ]
+    }
+    </script>
 
+    <!-- CSS Internal -->
+    <style>
+        :root {
+            --primary: #004481; /* Warna khas BFI Finance */
+            --accent: #f37021;  /* Warna aksen orange */
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #e9ecef;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: var(--dark); line-height: 1.6; background-color: #fff; }
+        header { background: var(--primary); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.2rem; font-weight: bold; }
+        
+        .hero { background: linear-gradient(rgba(0,68,129,0.85), rgba(0,68,129,0.85)), url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 4rem 1rem; }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem; }
+        
+        .section { padding: 3rem 8%; text-align: center; }
+        .bg-light { background-color: var(--light); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: left; }
+        .card h3 { color: var(--primary); margin-bottom: 0.5rem; }
+        
+        /* Form Simulasi Style */
+        .form-container { background: white; max-width: 550px; margin: -3rem auto 2rem; padding: 2rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); text-align: left; position: relative; z-index: 10; }
+        .form-container h2 { color: var(--primary); text-align: center; margin-bottom: 0.5rem; font-size: 1.5rem; }
+        .form-container p.subtitle { text-align: center; color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; }
+        .form-group { margin-bottom: 1.2rem; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 0.4rem; color: #444; }
+        .form-group input { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; }
+        .form-group input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 2px rgba(0,68,129,0.1); }
+        .btn-submit { width: 100%; background: #25D366; color: white; padding: 1rem; border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .btn-submit:hover { background: #128C7E; }
+
+        /* SLIDER CARDS FULL WIDTH TANPA SCROLLBAR */
+        .estimasi-slider-container {
+            position: relative;
+            margin-top: 1.5rem;
+            max-width: 500px; /* Maksimal lebar di HP agar rapi */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .slide-hint {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .estimasi-slider {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 0.5rem 0;
+            -webkit-overflow-scrolling: touch;
+            
+            /* Sembunyikan scrollbar di Firefox & IE/Edge */
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        /* Sembunyikan scrollbar di Chrome, Safari, Opera */
+        .estimasi-slider::-webkit-scrollbar {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .estimasi-card {
+            flex: 0 0 100%; /* Lebar pas 100% dari container (satu layar HP) */
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            text-align: left;
+        }
+        .estimasi-badge {
+            background: #eef6ff;
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        .estimasi-card h3 {
+            font-size: 1.15rem;
+            color: #2d3748;
+            margin-bottom: 0.8rem;
+        }
+        .estimasi-detail {
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 0.8rem;
+            margin-top: 0.8rem;
+        }
+        .estimasi-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.92rem;
+            margin-bottom: 0.5rem;
+        }
+        .estimasi-row.highlight {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.05rem;
+            padding-bottom: 0.4rem;
+        }
+
+        /* Di layar Desktop/Laptop besar */
+        @media (min-width: 992px) {
+            .estimasi-slider-container {
+                max-width: 100%;
+            }
+            .slide-hint { display: none; }
+            .estimasi-slider {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                overflow-x: visible;
+            }
+            .estimasi-card {
+                flex: none;
+            }
+        }
+
+        /* Style Accordion FAQ */
+        .faq-container { max-width: 800px; margin: 2rem auto 0; text-align: left; }
+        .faq-item { background: white; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #e2e8f0; }
+        .faq-question { width: 100%; background: none; border: none; padding: 1rem 1.2rem; text-align: left; font-size: 1.05rem; font-weight: 600; color: var(--primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-answer { padding: 0 1.2rem 1rem; color: #4a5568; display: none; font-size: 0.98rem; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-item.active .faq-question { border-bottom: 1px dashed #e2e8f0; }
+
+        /* SEO Local Box */
+        .local-seo-box { background: #eef6ff; border: 1px solid #bee3f8; border-radius: 8px; padding: 1.5rem; max-width: 800px; margin: 2rem auto 0; text-align: center; }
+        .local-seo-box h3 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .local-seo-box p { font-size: 0.95rem; color: #2d3748; }
+
+        /* Floating WA Button */
+        .floating-wa { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; gap: 8px; }
+        
+        footer { background: var(--dark); color: white; text-align: center; padding: 1.5rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mitra Agen BFI Finance</div>
+        <div>Resmi & Diawasi OJK</div>
+    </header>
+
+    <section class="hero">
+        <h1>Pinjaman BPKB Mobil Cepat Cair & Aman</h1>
+        <p>Dapatkan pencairan dana hingga 85% dari nilai kendaraan Anda dengan proses mudah, bunga ringan, dan pendampingan hingga cair.</p>
+    </section>
+
+    <!-- FORM SIMULASI PINJAMAN (4 DATA) -->
+    <div class="form-container">
+        <h2>Simulasi & Pengajuan Cepat</h2>
+        <p class="subtitle">Isi data singkat di bawah ini untuk konsultasi via WhatsApp</p>
+        <form id="simulasiForm" onsubmit="sendToWhatsapp(event)">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" placeholder="Contoh: Budi Santoso" required>
+            </div>
+            <div class="form-group">
+                <label for="mobil">Tipe Mobil</label>
+                <input type="text" id="mobil" placeholder="Contoh: Toyota Avanza G 1.3" required>
+            </div>
+            <div class="form-group">
+                <label for="tahun">Tahun Mobil</label>
+                <input type="number" id="tahun" placeholder="Contoh: 2018" min="2005" max="2026" required>
+            </div>
+            <div class="form-group">
+                <label for="domisili">Domisili</label>
+                <input type="text" id="domisili" placeholder="Contoh: Jakarta Selatan" required>
+            </div>
+            <button type="submit" class="btn-submit">💬 Hitung Simulasi via WhatsApp</button>
+        </form>
+    </div>
+
+    <!-- KEUNGGULAN -->
+    <section class="section bg-light" style="padding-top: 1rem;">
+        <h2>Keunggulan Pinjaman BPKB Mobil Lewat Kami</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Pencairan Tinggi</h3>
+                <p>Plafon dana disesuaikan dengan nilai taksiran kendaraan secara optimal.</p>
+            </div>
+            <div class="card">
+                <h3>Bunga Bersaing</h3>
+                <p>Suku bunga terjangkau dengan pilihan tenor fleksibel dari 12 hingga 48 bulan.</p>
+            </div>
+            <div class="card">
+                <h3>Mobil Tetap Digunakan</h3>
+                <p>Hanya BPKB yang dijaminkan, mobil tetap bisa dipakai untuk operasional sehari-hari.</p>
+            </div>
+            <div class="card">
+                <h3>Proses Cepat & Resmi</h3>
+                <p>Pengajuan diproses langsung oleh BFI Finance yang terdaftar dan diawasi OJK.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTIMASI SLIDER / FULL CARD PER MOBIL (TENOR 1-4 TAHUN LENGKAP) -->
+    <section class="section">
+        <h2>Estimasi Pencairan & Angsuran Mobil Populer</h2>
+        <p style="color: #666; max-width: 700px; margin: 0 auto;">Berikut gambaran estimasi batas maksimal dana pencairan beserta rincian cicilannya:</p>
+
+        <div class="estimasi-slider-container">
+            <div class="slide-hint">👈 Usap / Geser untuk melihat mobil lain 👉</div>
+            
+            <div class="estimasi-slider">
+                <!-- Card 1 -->
+                <div class="estimasi-card">
+                    <span class="estimasi-badge">MPV Favorit</span>
+                    <h3>Toyota Avanza 1.3 G (2018)</h3>
+                    <div class="estimasi-row highlight">
+                        <span>Max Cair:</span>
+                        <span>Rp 115.000.000</span>
+                    </div>
+                    <div class="estimasi-detail">
+                        <div class="estimasi-row">
+                            <span>1 Tahun (12 Bln):</span>
+                            <strong>Rp 10.200.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>2 Tahun (24 Bln):</span>
+                            <strong>Rp 5.800.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>3 Tahun (36 Bln):</span>
+                            <strong>Rp 4.300.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>4 Tahun (48 Bln):</span>
+                            <strong>Rp 3.500.000 /bln</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="estimasi-card">
+                    <span class="estimasi-badge">Medium MPV</span>
+                    <h3>Innova Reborn 2.0 V (2019)</h3>
+                    <div class="estimasi-row highlight">
+                        <span>Max Cair:</span>
+                        <span>Rp 230.000.000</span>
+                    </div>
+                    <div class="estimasi-detail">
+                        <div class="estimasi-row">
+                            <span>1 Tahun (12 Bln):</span>
+                            <strong>Rp 20.400.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>2 Tahun (24 Bln):</span>
+                            <strong>Rp 11.400.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>3 Tahun (36 Bln):</span>
+                            <strong>Rp 8.600.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>4 Tahun (48 Bln):</span>
+                            <strong>Rp 7.100.000 /bln</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="estimasi-card">
+                    <span class="estimasi-badge">Compact SUV</span>
+                    <h3>Honda HR-V 1.5 E (2020)</h3>
+                    <div class="estimasi-row highlight">
+                        <span>Max Cair:</span>
+                        <span>Rp 210.000.000</span>
+                    </div>
+                    <div class="estimasi-detail">
+                        <div class="estimasi-row">
+                            <span>1 Tahun (12 Bln):</span>
+                            <strong>Rp 18.600.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>2 Tahun (24 Bln):</span>
+                            <strong>Rp 10.500.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>3 Tahun (36 Bln):</span>
+                            <strong>Rp 7.800.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>4 Tahun (48 Bln):</span>
+                            <strong>Rp 6.400.000 /bln</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="estimasi-card">
+                    <span class="estimasi-badge">Big SUV</span>
+                    <h3>Toyota Fortuner VRZ (2021)</h3>
+                    <div class="estimasi-row highlight">
+                        <span>Max Cair:</span>
+                        <span>Rp 380.000.000</span>
+                    </div>
+                    <div class="estimasi-detail">
+                        <div class="estimasi-row">
+                            <span>1 Tahun (12 Bln):</span>
+                            <strong>Rp 33.700.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>2 Tahun (24 Bln):</span>
+                            <strong>Rp 18.900.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>3 Tahun (36 Bln):</span>
+                            <strong>Rp 14.100.000 /bln</strong>
+                        </div>
+                        <div class="estimasi-row">
+                            <span>4 Tahun (48 Bln):</span>
+                            <strong>Rp 11.600.000 /bln</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 0.85rem; color: #666; margin-top: 1rem; text-align: left;">*Catatan: Nilai pencairan dan angsuran di atas bersifat estimasi awal. Besaran pasti akan disesuaikan dengan hasil inspeksi fisik kondisi kendaraan, kelengkapan surat-surat, serta profil pengajuan Anda.</p>
+    </section>
+
+    <!-- PERSYARATAN -->
+    <section class="section bg-light">
+        <h2>Persyaratan Pengajuan</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Kriteria Kendaraan</h3>
+                <p>• Segala jenis mobil (Sedan, SUV, MPV, Pick-up, Truck)<br>• Usia kendaraan hingga 15 tahun<br>• Pajak hidup / mati bisa dibantu</p>
+            </div>
+            <div class="card">
+                <h3>Dokumen Persyaratan</h3>
+                <p>• KTP Pemohon & Pasangan<br>• Kartu Keluarga (KK)<br>• Bukti Tempat Tinggal (PBB/Listrik)<br>• Slip Gaji / Mutasi Rekening<br>• STNK & BPKB Asli</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION WITH ACCORDION -->
+    <section class="section">
+        <h2>Pertanyaan Sering Diajukan (FAQ)</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Apakah BPKB mobil belum balik nama bisa diproses?</span>
+                    <span>➕</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Bisa! BPKB yang masih atas nama orang lain atau belum dibaliknama tetap dapat diproses pengajuannya, selama melampirkan STNK aktif dan bukti transaksi/kwitansi jual beli yang sah.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Berapa lama proses pencairan BPKB mobil di BFI Finance?</span>
+                    <span>➕</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Proses pencairan tergolong sangat cepat. Umumnya membutuhkan waktu 1 hingga 2 hari kerja setelah seluruh dokumen persyaratan lengkap dan verifikasi cek fisik kendaraan disetujui.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Berapa usia maksimal mobil yang bisa dijaminkan?</span>
+                    <span>➕</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Usia kendaraan penumpang (Sedan, SUV, MPV) yang bisa dijaminkan adalah maksimal 15 tahun. Sedangkan untuk kendaraan jenis komersial (Pick-up/Truck) maksimal 10–12 tahun.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Apakah mobil masih bisa saya gunakan setelah BPKB dijaminkan?</span>
+                    <span>➕</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Tentu saja. Yang dijaminkan ke BFI Finance hanyalah dokumen BPKB-nya saja. Mobil tetap Anda bawa dan bisa digunakan seperti biasa untuk mobilitas harian.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Apakah ada biaya tersembunyi saat pencairan?</span>
+                    <span>➕</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sama sekali tidak ada. Semua potongan resmi (asuransi kendaraan, administrasi) dan nominal angsuran dijelaskan secara transparan di awal sebelum persetujuan akad.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TARGETING SEO LOKAL (CITY-BASED KEYWORDS) -->
+        <div class="local-seo-box">
+            <h3>📍 Area Jangkauan Layanan Pinjaman BPKB Mobil</h3>
+            <p>Kami melayani pengajuan gadai & pinjaman BPKB mobil cepat cair untuk seluruh wilayah <strong>Jakarta (Pusat, Selatan, Barat, Timur, Utara), Bogor, Depok, Tangerang, Tangerang Selatan, Bekasi, Serang, Cikarang</strong>, serta cabang resmi BFI Finance di kota-kota besar seluruh Indonesia.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agen Resmi BFI Finance. Hak Cipta Dilindungi.</p>
+        <p style="font-size: 0.8rem; color: #ccc; margin-top: 5px;">Situs ini dikelola secara independen oleh Agen Resmi BFI Finance untuk mempermudah layanan konsultasi & pengajuan calon nasabah.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="floating-wa" target="_blank" id="floatWaLink">
+        💬 Chat WhatsApp
+    </a>
+
+    <!-- SCRIPT OTOMATISASI WA & FAQ TOGGLE -->
+    <script>
+        // GANTI NOMOR WHATSAPP ANDA DI SINI (Gunakan awalan 62)
+        const NOMOR_WA = "6281234567890"; 
+
+        // Update link floating WA
+        document.getElementById("floatWaLink").href = `https://wa.me/${NOMOR_WA}?text=Halo%20saya%20ingin%20tanya%20simulasi%20pinjaman%20BPKB%20mobil`;
+
+        function sendToWhatsapp(event) {
+            event.preventDefault(); 
+
+            const nama = document.getElementById('nama').value;
+            const mobil = document.getElementById('mobil').value;
+            const tahun = document.getElementById('tahun').value;
+            const domisili = document.getElementById('domisili').value;
+
+            const message = `Halo Agen BFI Finance, saya ingin konsultasi simulasi pinjaman BPKB mobil.%0A%0A` +
+                `*Data Pengajuan:*%0A` +
+                `• *Nama:* ${nama}%0A` +
+                `• *Tipe Mobil:* ${mobil}%0A` +
+                `• *Tahun Mobil:* ${tahun}%0A` +
+                `• *Domisili:* ${domisili}%0A%0A` +
+                `Mohon dihitung estimasi pencairan dan angsurannya. Terima kasih!`;
+
+            window.open(`https://wa.me/${NOMOR_WA}?text=${message}`, '_blank');
+        }
+
+        // Script interaktif untuk Accordion FAQ
+        function toggleFaq(buttonElement) {
+            const faqItem = buttonElement.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-question span:last-child').innerText = '➕';
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+                buttonElement.querySelector('span:last-child').innerText = '➖';
+            }
+        }
+    </script>
+
+</body>
+</html>
